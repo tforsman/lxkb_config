@@ -30,7 +30,6 @@
         <in>system.h</in>
         <in>xkblib_interface.c</in>
       </df>
-      <in>config.h</in>
     </df>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
