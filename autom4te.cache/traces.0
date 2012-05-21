@@ -4093,7 +4093,7 @@ m4trace:configure.in:16: -1- _AM_SUBST_NOTMAKE([am__fastdepCC_TRUE])
 m4trace:configure.in:16: -1- _AM_SUBST_NOTMAKE([am__fastdepCC_FALSE])
 m4trace:configure.in:22: -1- m4_pattern_allow([^XMKMF$])
 m4trace:configure.in:23: -1- m4_pattern_allow([^STDC_HEADERS$])
-m4trace:configure.in:30: -1- PKG_CHECK_MODULES([LXKB_CONFIG], [$pkg_modules])
+m4trace:configure.in:30: -1- PKG_CHECK_MODULES([LXKB_CONFIG], [$build_pkg_modules])
 m4trace:configure.in:30: -1- PKG_PROG_PKG_CONFIG
 m4trace:configure.in:30: -1- m4_pattern_forbid([^_?PKG_[A-Z_]+$])
 m4trace:configure.in:30: -1- m4_pattern_allow([^PKG_CONFIG(_(PATH|LIBDIR|SYSROOT_DIR|ALLOW_SYSTEM_(CFLAGS|LIBS)))?$])
@@ -4104,24 +4104,33 @@ m4trace:configure.in:30: -1- m4_pattern_allow([^PKG_CONFIG_LIBDIR$])
 m4trace:configure.in:30: -1- m4_pattern_allow([^PKG_CONFIG$])
 m4trace:configure.in:30: -1- m4_pattern_allow([^LXKB_CONFIG_CFLAGS$])
 m4trace:configure.in:30: -1- m4_pattern_allow([^LXKB_CONFIG_LIBS$])
-m4trace:configure.in:30: -1- PKG_CHECK_EXISTS([$pkg_modules], [pkg_cv_[]LXKB_CONFIG_CFLAGS=`$PKG_CONFIG --[]cflags "$pkg_modules" 2>/dev/null`
+m4trace:configure.in:30: -1- PKG_CHECK_EXISTS([$build_pkg_modules], [pkg_cv_[]LXKB_CONFIG_CFLAGS=`$PKG_CONFIG --[]cflags "$build_pkg_modules" 2>/dev/null`
 		      test "x$?" != "x0" && pkg_failed=yes ], [pkg_failed=yes])
-m4trace:configure.in:30: -1- PKG_CHECK_EXISTS([$pkg_modules], [pkg_cv_[]LXKB_CONFIG_LIBS=`$PKG_CONFIG --[]libs "$pkg_modules" 2>/dev/null`
+m4trace:configure.in:30: -1- PKG_CHECK_EXISTS([$build_pkg_modules], [pkg_cv_[]LXKB_CONFIG_LIBS=`$PKG_CONFIG --[]libs "$build_pkg_modules" 2>/dev/null`
 		      test "x$?" != "x0" && pkg_failed=yes ], [pkg_failed=yes])
 m4trace:configure.in:30: -1- _PKG_SHORT_ERRORS_SUPPORTED
 m4trace:configure.in:31: -1- m4_pattern_allow([^LXKB_CONFIG_CFLAGS$])
 m4trace:configure.in:32: -1- m4_pattern_allow([^LXKB_CONFIG_LIBS$])
-m4trace:configure.in:39: -1- m4_pattern_allow([^HAVE_STDLIB_H$])
-m4trace:configure.in:39: -1- m4_pattern_allow([^HAVE_MALLOC$])
-m4trace:configure.in:39: -1- m4_pattern_allow([^HAVE_MALLOC$])
-m4trace:configure.in:39: -1- m4_pattern_allow([^LIB@&t@OBJS$])
-m4trace:configure.in:39: -1- m4_pattern_allow([^malloc$])
-m4trace:configure.in:44: -1- m4_pattern_allow([^LIB@&t@OBJS$])
-m4trace:configure.in:44: -1- m4_pattern_allow([^LTLIBOBJS$])
-m4trace:configure.in:44: -1- AM_CONDITIONAL([am__EXEEXT], [test -n "$EXEEXT"])
-m4trace:configure.in:44: -1- m4_pattern_allow([^am__EXEEXT_TRUE$])
-m4trace:configure.in:44: -1- m4_pattern_allow([^am__EXEEXT_FALSE$])
-m4trace:configure.in:44: -1- _AM_SUBST_NOTMAKE([am__EXEEXT_TRUE])
-m4trace:configure.in:44: -1- _AM_SUBST_NOTMAKE([am__EXEEXT_FALSE])
-m4trace:configure.in:44: -1- _AC_AM_CONFIG_HEADER_HOOK(["$ac_file"])
-m4trace:configure.in:44: -1- _AM_OUTPUT_DEPENDENCY_COMMANDS
+m4trace:configure.in:38: -1- PKG_CHECK_MODULES([XKEYBOARD_CONFIG], [$build_pkg_modules])
+m4trace:configure.in:38: -1- m4_pattern_allow([^XKEYBOARD_CONFIG_CFLAGS$])
+m4trace:configure.in:38: -1- m4_pattern_allow([^XKEYBOARD_CONFIG_LIBS$])
+m4trace:configure.in:38: -1- PKG_CHECK_EXISTS([$build_pkg_modules], [pkg_cv_[]XKEYBOARD_CONFIG_CFLAGS=`$PKG_CONFIG --[]cflags "$build_pkg_modules" 2>/dev/null`
+		      test "x$?" != "x0" && pkg_failed=yes ], [pkg_failed=yes])
+m4trace:configure.in:38: -1- PKG_CHECK_EXISTS([$build_pkg_modules], [pkg_cv_[]XKEYBOARD_CONFIG_LIBS=`$PKG_CONFIG --[]libs "$build_pkg_modules" 2>/dev/null`
+		      test "x$?" != "x0" && pkg_failed=yes ], [pkg_failed=yes])
+m4trace:configure.in:38: -1- _PKG_SHORT_ERRORS_SUPPORTED
+m4trace:configure.in:42: -1- m4_pattern_allow([^XKB_RULES_PATH$])
+m4trace:configure.in:49: -1- m4_pattern_allow([^HAVE_STDLIB_H$])
+m4trace:configure.in:49: -1- m4_pattern_allow([^HAVE_MALLOC$])
+m4trace:configure.in:49: -1- m4_pattern_allow([^HAVE_MALLOC$])
+m4trace:configure.in:49: -1- m4_pattern_allow([^LIB@&t@OBJS$])
+m4trace:configure.in:49: -1- m4_pattern_allow([^malloc$])
+m4trace:configure.in:54: -1- m4_pattern_allow([^LIB@&t@OBJS$])
+m4trace:configure.in:54: -1- m4_pattern_allow([^LTLIBOBJS$])
+m4trace:configure.in:54: -1- AM_CONDITIONAL([am__EXEEXT], [test -n "$EXEEXT"])
+m4trace:configure.in:54: -1- m4_pattern_allow([^am__EXEEXT_TRUE$])
+m4trace:configure.in:54: -1- m4_pattern_allow([^am__EXEEXT_FALSE$])
+m4trace:configure.in:54: -1- _AM_SUBST_NOTMAKE([am__EXEEXT_TRUE])
+m4trace:configure.in:54: -1- _AM_SUBST_NOTMAKE([am__EXEEXT_FALSE])
+m4trace:configure.in:54: -1- _AC_AM_CONFIG_HEADER_HOOK(["$ac_file"])
+m4trace:configure.in:54: -1- _AM_OUTPUT_DEPENDENCY_COMMANDS
